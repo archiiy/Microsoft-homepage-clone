@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.5rem 2rem;
+}
+
+/* Left Section with Logo */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 30px;
+    /* Adjust size */
+    margin-right: 20px;
+}
+
+/* Navigation Links */
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.right-section {
+    display: flex;
+    gap: 20px;
+}
+
+.right-section a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.right-section a:hover {
+    text-decoration: underline;
+}
+
+.avatar-img {
+    width: 24px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.control-btn {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    opacity: 0.5;
+}
+
+.control-btn:hover {
+    transform: scale(1.1);
+}
+
+.controls {
+    position: relative;
+    width: 100%;
+    left: 45%;
+}
+
+#mainpic {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-text {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 20%;
+    right: 50%;
+    left: 5%;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    background-color: rgba(255, 255, 255, );
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+
+.hero-text h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text button {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    background-color: #2455c6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.hero-text button:hover {
+    background-color: rgb(10, 41, 177);
+}
+
+.image-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 60px 350px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-item img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55px;
+    height: auto;
+    display: block;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.image-item a {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 15px;
+    align-items: center;
+    color: #4e82fb;
+    font-weight: 800;
+
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.image-item a:hover {
+    color: rgb(15, 3, 83);
+    font-weight: bold;
+}
+
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 55px;
+    justify-content: flex-start;
+    /* left aligned */
+}
+
+.promo-card {
+    width: 230px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-card img {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    border-radius: 0;
+    margin-bottom: 25px;
+}
+
+.promo-card h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.promo-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#img1 {
+    margin-bottom: 50px;
+}
+
+#img2 {
+    margin-bottom: 60px;
+}
+
+#img3 {
+    margin-bottom: 125px;
+}
+
+#img4 {
+    margin-bottom: 125px;
+    ;
+}
+
+/* Button Style */
+.promo-card button {
+    background-color: #0067b8;
+    color: white;
+    border: none;
+    padding: auto;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Animation */
+.promo-card button:hover {
+    background-color: #004a91;
+    transform: scale(1.05);
+}
+
+.xbox {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+.xbox img {
+    width: 1150px;
+    max-width: fit-content;
+    padding: 50px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    right: 15%;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+#h {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: lighter;
+
+}
+
+#p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    word-spacing: 4px;
+    font-weight: lighter;
+}
+
+#b1 {
+    background-color: #1c5ef9;
+    color: white;
+    border: none;
+}
+
+#b2 {
+    background-color: #333;
+    color: white;
+}
+
+#b1:hover {
+    background-color: #004a91;
+    transform: scale(1.05);
+}
+
+#b2:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.site-footer {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.follow-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.follow-section p {
+    padding-left: 20px;
+}
+
+.social-icons a img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #9e9c9c;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom .right a {
+    margin-left: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-bottom .right a:hover {
+    text-decoration: underline;
+}
+
