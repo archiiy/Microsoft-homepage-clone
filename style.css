@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 0.2rem;
 }
 
 /* Navbar */
@@ -20,14 +20,14 @@
 }
 
 .logo-img {
-    height: 30px;
+    height: 1.3rem;
     /* Adjust size */
-    margin-right: 20px;
+    margin-right: 1rem;
 }
 
 /* Navigation Links */
 .nav-links a {
-    margin-left: 20px;
+    margin-left: 1rem;
     text-decoration: none;
     color: #333;
     font-weight: 500;
@@ -39,7 +39,7 @@
 
 .right-section {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .right-section a {
@@ -53,23 +53,26 @@
 }
 
 .avatar-img {
-    width: 24px;
+    width: 1.5rem;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
 }
 
+
+
+
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1rem;
     margin-right: 10px;
     cursor: pointer;
 }
 
 .control-btn {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
     cursor: pointer;
     transition: transform 0.2s;
     opacity: 0.5;
@@ -88,44 +91,35 @@ button {
 #mainpic {
     width: 100%;
     height: auto;
-    display: block;
     object-fit: cover;
+    display: block; /* removed conflicting display: flex */
 }
 
+/* Hero text styling */
 .hero-text {
-    display: flex;
-    flex-wrap: wrap;
     position: absolute;
     top: 20%;
-    right: 50%;
     left: 5%;
+    right: 50%;
     z-index: 2;
     color: rgb(0, 0, 0);
     text-align: left;
-    background-color: rgba(255, 255, 255, );
+    background-color:none; /* fixed */
     padding: 2rem;
-    border-radius: 10px;
-    max-width: 350px;
+    max-width: 90%;
 }
 
-
 .hero-text h1 {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .hero-text p {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
 
 .hero-text button {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0.5rem 1rem;
     background-color: #2455c6;
     color: white;
@@ -138,24 +132,63 @@ button {
     background-color: rgb(10, 41, 177);
 }
 
+@media (max-width: 768px) {
+    .hero-text {
+        top: 16%;
+        left: 5%;
+        right: 50%;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    .hero-text button {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+
+
+/* Existing style */
 .image-row {
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 60px 350px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem 20rem;
 }
+
+/* Mobile responsive tweak */
+@media (max-width:800px) {
+    .image-row {
+        padding: 1rem 8rem; /* Smaller horizontal padding */
+        justify-content: center; /* Optional: center content on small screens */
+    }
+
+    .image-item a {
+        font-size: 0.9rem; /* Optional: slightly smaller text */
+    }
+}
+
 
 .image-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items:center;
+    text-align:center;
 }
 
 .image-item img {
     display: flex;
     flex-wrap: wrap;
-    width: 55px;
+    width:50px;;
     height: auto;
     display: block;
     margin: 0;
@@ -165,8 +198,8 @@ button {
 .image-item a {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
-    font-size: 15px;
+    margin-top: 1rem;
+    font-size: 1rem;
     align-items: center;
     color: #4e82fb;
     font-weight: 800;
@@ -188,17 +221,20 @@ button {
 .card-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 55px;
+    gap: 1rem;
+    padding: 2.5rem;
     justify-content: flex-start;
     /* left aligned */
 }
 
 .promo-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 230px;
     background-color: #ffffff;
     border-radius: 0px;
-    padding: 20px;
+    padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.3s;
@@ -209,16 +245,19 @@ button {
 }
 
 .promo-card img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     height: auto;
     padding: 0%;
     border-radius: 0;
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
 }
 
 .promo-card h3 {
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: #1a1a1a;
 }
 
@@ -396,4 +435,3 @@ button {
 .footer-bottom .right a:hover {
     text-decoration: underline;
 }
-
