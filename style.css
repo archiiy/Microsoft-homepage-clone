@@ -100,8 +100,8 @@ button {
 .hero-text {
     position: absolute;
     top: 20%;
-    left: 5%;
-    right: 70%;
+    left:2rem;
+    right: 60%;
     z-index: 2;
     color: rgb(0, 0, 0);
     text-align: left;
@@ -112,7 +112,7 @@ button {
 }
 
 .hero-text h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -122,12 +122,12 @@ button {
 }
 
 .hero-text button {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     background-color: #c6244f;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 1rem;
 }
 
 .hero-text button:hover {
@@ -258,8 +258,8 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 230px;
-    background-color: #ffffff;
-    border-radius: 0px;
+    background-color: #ecb8b8;
+    border-radius: 2rem;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -277,7 +277,7 @@ button {
     width: 100%;
     height: auto;
     padding: 0%;
-    border-radius: 0;
+    border-radius:2rem;
     margin-bottom: 1rem;
 }
 
@@ -316,7 +316,7 @@ button {
     color: rgb(255, 255, 255);
     border: none;
     padding: auto;
-    border-radius: 2px;
+    border-radius:1rem;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -336,9 +336,10 @@ button {
 }
 
 .xbox img {
-    width: 1150px;
-    max-width: fit-content;
-    padding: 50px;
+    width:73.5rem;
+    max-width:min-content;
+    padding-left: 3rem;
+    
     height: auto;
     display: block;
     object-fit: cover;
@@ -370,9 +371,10 @@ button {
 }
 
 #b1 {
-    background-color: #5e1cf9d3;
+    background-color: #c62d5bd3;
     color: white;
     border: none;
+    border-radius: 1rem;
 }
 
 #b2 {
@@ -381,7 +383,7 @@ button {
 }
 
 #b1:hover {
-    background-color: #22005b;
+    background-color: #5b002a;
     transform: scale(1.05);
 }
 
